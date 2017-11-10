@@ -25,7 +25,20 @@ client.on("message", (message) => {
         "'HOLD ME TIGHT!' - Narancia loota",
         "'**Getting deeper into it**' - Nayami Okoro",
         "'(Kamui is the god of dolls)' - Kamui Tenshin",
-        "'(xyth apparently loves to attack Yamaji's crotch)' - Yamaji Azumamaro"];
+        "'(xyth apparently loves to attack Yamaji's crotch)' - Yamaji Azumamaro",
+        "'**She'd kiss kamui's cheek, walking away quickly**' - Nayami Okoro",
+        "'I don't like people.' - Kaiya Sauki",
+        "'**One would be unlocekd.** spekking.' - Someone",
+        "'She'd look back to Oku and Kiaya.' - Nayami",
+        "'Oya Oya?' - Red",
+        "'**She'd look over to Aiko.**' - Aiko Yamitsu",
+        "https://cdn.discordapp.com/attachments/371676750075265026/373102671307210753/unknown1.png",
+        "'I-Isnt it a bit too h-huge..?' - Narancia Loota",
+        "'Im black.' - Mitsuo Shunichi",
+        "'Oh man, this is gonna be intense!' - Yuuro/Yakuto/Shin",
+        "'**Crying on the inside.**' - Nayami Okoro",
+        "'(Because Narancia has the ability to arm-o-DICK)' - Kiyoshi/Mitsuru/DS",
+        "'**The raccoon would suddenly grow rockets out of its asshole**' - Kamui Tenshin"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
