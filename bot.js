@@ -16,7 +16,7 @@ client.on("message", (message) => {
         "'Can someone lend me their sweaty armpits?' - Keppi Docko",
         "'I'll drill and screw my way out of here!' - Narancia",
         "'It doesn't meant that your quirk is strong or not!!, Its the will and responsibility of saving everyone!!!' -Kiyoshi Shichiro",
-        "'We can go deeper' - Kamui Tenshin",];
+        "'We can go deeper' - Kamui Tenshin"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
