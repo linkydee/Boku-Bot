@@ -6,8 +6,23 @@ client.on("ready", () => {
 });
 
 const rollWords = ["Roll me", "roll me", "Roll Me", "ROLL ME"];
+const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 
 //Replies
+
+client.on("message", (message) => {
+    if( qoteWords.some(word => message.content.startsWith(word)) ) {
+      var question = [
+        "'Can someone lend me their sweaty armpits?' - Keppi Docko",
+        "'I'll drill and screw my way out of here!' - Narancia",
+        "'It doesn't meant that your quirk is strong or not!!, Its the will and responsibility of saving everyone!!!' -Kiyoshi Shichiro",
+        "'We can go deeper' - Kamui Tenshin",];
+      var answer = question[Math.floor(question.length * Math.random())];
+      message.channel.sendMessage(answer);
+    }
+  });
+
+
 client.on("message", (message) => {
     if( rollWords.some(word => message.content.startsWith(word)) ) {
       
