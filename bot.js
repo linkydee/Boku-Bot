@@ -16,7 +16,16 @@ client.on("message", (message) => {
         "'Can someone lend me their sweaty armpits?' - Keppi Docko",
         "'I'll drill and screw my way out of here!' - Narancia",
         "'It doesn't meant that your quirk is strong or not!!, Its the will and responsibility of saving everyone!!!' -Kiyoshi Shichiro",
-        "'We can go deeper' - Kamui Tenshin"];
+        "'We can go deeper' - Kamui Tenshin",
+        "'Keppi Docko come in.' - Chalisa",
+        "'Well, hurray for me getting wet...' - Shun/hikai",
+        "'I've never had more than one person before!' - Nayami Okoro",
+        "'**She held out a bright neon pink bra, that was decorated with little horrible sparkles.**' - Nayami Okoro",
+        "'And it keeps making my toesies tingle...' - Keppi Docko",
+        "'HOLD ME TIGHT!' - Narancia loota",
+        "'**Getting deeper into it**' - Nayami Okoro",
+        "'(Kamui is the god of dolls)' - Kamui Tenshin",
+        "'(xyth apparently loves to attack Yamaji's crotch)' - Yamaji Azumamaro"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
