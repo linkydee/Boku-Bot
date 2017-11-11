@@ -127,7 +127,24 @@ client.on("message", (message) => {
         "'(Just wait, until you come out)' - Aiko Yamitsu",
         "https://cdn.discordapp.com/attachments/371676750075265026/377083688464154625/Screen_Shot_2017-11-06_at_20.15.45.png",
         "https://cdn.discordapp.com/attachments/371676750075265026/377084511797641227/Screen_Shot_2017-11-06_at_20.18.55.png",
-        "'SORRY I'M A CUNT.' - Kiyoshi Shichiro"];
+        "'SORRY I'M A CUNT.' - Kiyoshi Shichiro"
+        "'**Zetsu's eyes widened.**  W-was that a girl? **He muttered to himself**?' - Zetsubō Yami",
+        "'(Also, did he notice the girl touched him.)' - Yamaji Azumamaro",
+        "'And did she p-poke me?' - Zetsubō Yami"
+        "'(If any of you need to know Zetsu is getting quite hard.) - Zetsubō Yami\n'(boner!?)' - Kiyoshi Shichiro\n'His quirk is __Bone__spear' - Zetsubō Yami",
+        "'What's the matter? **He said, commenting on the fact he was panting so much** I thought you said you didn't have a limit, has it gone down? Or--' - Yamaji and others",
+        "'I- I have no limit...' - Kamui Tenshin",
+        "'LEMME TELL YOU SOMETHIN BOTH STRANGERS THAT ARE TRYING TO LIT ME ON FIRE, YOU START A WAR WITH THE BIG BAD WOLF AND I'LL RIP YOUR INTESTINES AND TURN IT INTO A SWEATER!' - Kossha Saito",
+        "'Can I make people soft..? **Keppi thought**' - Keppi Docko",
+        "'**He smirked, cockily** I've gotten a whole lot better!' - Yamaji",
+        "'***I LOVE DICKS***' - Kiyoshi Shichiro/DickLover69",
+        "'2+2=4-1=3 QUICK MAFFS' - Yoroi Endo",
+        "'Mah cock... :(' - Drex",
+        "'Someone hurt Sake's cock.' - Yamaji Azumamaro (Maybe you did last night)",
+        "'My cock need to be stronk' - Drex",
+        "'Rip Nori's cock.' - Drex",
+        "'I WILL ACTUALLY SUCK OFF ALL THE ADMINS' - Yoroi Endo (Im waiting...)",
+        "https://cdn.discordapp.com/attachments/371676750075265026/378878581176008716/Screen_Shot_2017-11-11_at_19.07.30.png"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
