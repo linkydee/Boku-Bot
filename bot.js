@@ -16,7 +16,7 @@ const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 //Replies
 
 client.on("message", (message) => {
-    if( creepWords.some(word => message.content.startsWith(word)) ) {
+    if( creepWords.some(word => message.content.includes(word)) ) {
       var question = ["It smells bad", "It smells good"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer)
