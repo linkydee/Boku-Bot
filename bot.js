@@ -20,11 +20,11 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   if( csheetWords.some(word => message.content.includes(word)) ) {
-    message.channel.sendMessage("Full Name:  
+    message.channel.sendMessage("Full Name: " 
                                 "Age:  
-                                "Gender: 
+                                "Gender: "
                                 "Height: 
-                                "Quirk: 
+                                "Quirk: "
                                 "Occupation: 
                                 "Bio: ");
   }
