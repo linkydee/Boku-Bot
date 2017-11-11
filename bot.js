@@ -137,7 +137,6 @@ client.on("message", (message) => {
         "'Can I make people soft..? **Keppi thought**' - Keppi Docko",
         "'**He smirked, cockily** I've gotten a whole lot better!' - Yamaji",
         "'***I LOVE DICKS***' - Kiyoshi Shichiro/DickLover69",
-        "'2+2=4-1=3 QUICK MAFFS' - Yoroi Endo",
         "'Mah cock... **Sad face**' - Drex",
         "'Someone hurt Sake's cock.' - Yamaji Azumamaro (Maybe you did last night)",
         "'My cock need to be stronk' - Drex",
