@@ -130,8 +130,7 @@ client.on("message", (message) => {
         "'SORRY I'M A CUNT.' - Kiyoshi Shichiro"
         "'**Zetsu's eyes widened.**  W-was that a girl? **He muttered to himself**?' - Zetsubō Yami",
         "'(Also, did he notice the girl touched him.)' - Yamaji Azumamaro",
-        "'And did she p-poke me?' - Zetsubō Yami"
-        "'(If any of you need to know Zetsu is getting quite hard.) - Zetsubō Yami\n'(boner!?)' - Kiyoshi Shichiro\n'His quirk is __Bone__spear' - Zetsubō Yami",
+        "'And did she p-poke me?' - Zetsubō Yami",
         "'What's the matter? **He said, commenting on the fact he was panting so much** I thought you said you didn't have a limit, has it gone down? Or...' - Yamaji and others",
         "'I- I have no limit...' - Kamui Tenshin",
         "'LEMME TELL YOU SOMETHIN BOTH STRANGERS THAT ARE TRYING TO LIT ME ON FIRE, YOU START A WAR WITH THE BIG BAD WOLF AND I'LL RIP YOUR INTESTINES AND TURN IT INTO A SWEATER!' - Kossha Saito",
