@@ -14,7 +14,7 @@ const lennyWords = ["lenny", "Lenny", "LENNY"];
 //Replies
 
 client.on("message", (message) => {
-  if( lennyWords.some(word => message.content.includes(word)) ) {
+  if( lennyWords.some(word => message.content.startsWith(word)) ) {
     message.channel.sendMessage("https://tenor.com/view/lenny-face-gif-7486239")
   }
 });
