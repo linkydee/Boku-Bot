@@ -16,7 +16,7 @@ const marryWords = ["Boku marry me", "boku marry me", "boku Marry me", "BOKU MAR
 //Replies
 client.on("message", (message) => {
     if( marryWords.some(word => message.content.startsWith(word)) ) {
-      var person = <@${message.author.id}
+      var person = ["<@${message.author.id}"]
     Message.channel.sendMessage(person);
     }
   });
