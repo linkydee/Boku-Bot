@@ -11,8 +11,14 @@ const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "C
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
 const lennyWords = ["lenny", "Lenny", "LENNY"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
+const marryWords = ["Boku marry me", "boku marry me", "boku Marry me", "BOKU MARRY ME"];
 
 //Replies
+client.on("message", (message) => {
+    if( marryWords.some(word => message.content.startsWith(word)) ) {
+    Message.channel.sendMessage(">marry <@${message.author.id}");
+    }
+  });
 
 client.on("message", (message) => {
     if( rateWords.some(word => message.content.startsWith(word)) ) {
