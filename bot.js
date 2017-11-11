@@ -117,7 +117,8 @@ client.on("message", (message) => {
         "'Wha- Oh. I got gender changed.' - Yamaji/Yoshihiro/Ezekiel",
         "'(Just wait, until you come out)' - Aiko Yamitsu",
         "https://cdn.discordapp.com/attachments/371676750075265026/377083688464154625/Screen_Shot_2017-11-06_at_20.15.45.png",
-        "https://cdn.discordapp.com/attachments/371676750075265026/377084511797641227/Screen_Shot_2017-11-06_at_20.18.55.png"];
+        "https://cdn.discordapp.com/attachments/371676750075265026/377084511797641227/Screen_Shot_2017-11-06_at_20.18.55.png",
+        "'SORRY I'M A CUNT.' - Kiyoshi Shichiro"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
