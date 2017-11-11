@@ -10,8 +10,17 @@ const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
 const lennyWords = ["lenny", "Lenny", "LENNY"];
+const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 
 //Replies
+
+client.on("message", (message) => {
+    if( rateWords.some(word => message.content.startsWith(word)) ) {
+      var question = ["I rate that 1/10", "I rate that 2/10", "I rate that 3/10", "I rate that 4/10", "I rate that 5/10", "I rate that 6/10", "I rate that 7/10", "I rate that 8/10", "I rate that 9/10", "I rate that 10/10"];
+      var answer = question[Math.floor(question.length * Math.random())];
+      message.channel.sendMessage(answer)
+    }
+  });
 
 client.on("message", (message) => {
   if( lennyWords.some(word => message.content.startsWith(word)) ) {
