@@ -7,8 +7,35 @@ client.on("ready", () => {
 
 const rollWords = ["Roll me", "roll me", "Roll Me", "ROLL ME"];
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
+const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
+const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
 
 //Replies
+
+client.on("message", (message) => {
+  if( qsheetWords.some(word => message.content.includes(word)) ) {
+    message.channel.sendMessage("")
+  }
+});
+
+client.on("message", (message) => {
+  if( csheetWords.some(word => message.content.includes(word)) ) {
+    message.channel.sendMessage("
+Full Name:  
+
+Age:  
+
+Gender: 
+
+Height: 
+
+Quirk: 
+
+Occupation: 
+
+Bio: ")
+  }
+});
 
 client.on("message", (message) => {
     if( qoteWords.some(word => message.content.startsWith(word)) ) {
