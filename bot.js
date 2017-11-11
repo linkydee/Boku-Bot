@@ -26,7 +26,7 @@ client.on("message", (message) => {
                                 "Height: "
                                 "Quirk: "
                                 "Occupation: "
-                                "Bio: ");
+                                "Bio: ")
   }
 });
 
