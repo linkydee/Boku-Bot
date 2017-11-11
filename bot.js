@@ -14,7 +14,7 @@ const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"]
 
 client.on("message", (message) => {
   if( qsheetWords.some(word => message.content.includes(word)) ) {
-    message.channel.sendMessage("")
+    message.channel.sendMessage("fdfs")
   }
 });
 
