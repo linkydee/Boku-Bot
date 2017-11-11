@@ -12,7 +12,6 @@ const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"]
 const lennyWords = ["lenny", "Lenny", "LENNY"];
 const creepWords = ["sniff", "Sniff", "SNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
-const marryWords = ["Boku marry me", "boku marry me", "boku Marry me", "BOKU MARRY ME"];
 
 //Replies
 
