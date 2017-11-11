@@ -141,8 +141,7 @@ client.on("message", (message) => {
         "'Someone hurt Sake's cock.' - Yamaji Azumamaro (Maybe you did last night)",
         "'My cock need to be stronk' - Drex",
         "'Rip Nori's cock.' - Drex",
-        "'I WILL ACTUALLY SUCK OFF ALL THE ADMINS' - Yoroi Endo (Im waiting...)",
-        "https://cdn.discordapp.com/attachments/371676750075265026/378878581176008716/Screen_Shot_2017-11-11_at_19.07.30.png"];
+        "'I WILL ACTUALLY SUCK OFF ALL THE ADMINS' - Yoroi Endo (Im waiting...)"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
