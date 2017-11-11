@@ -12,8 +12,15 @@ const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"]
 const lennyWords = [".Blenny", ".BLenny", ".BLENNY"];
 const creepWords = [".Bsniff", ".BSniff", ".BSNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
+const eps1Words = ["Boku Eps 1 s 1"]
 
 //Replies
+
+client.on("message", (message) => {
+  if( eps1Words.some(word => message.content.startsWith(word)) ) {
+    message.channel.sendMessage("https://lh3.googleusercontent.com/6-JV_ZyNAsOO1te9KqD2aAdHwJ3piyejc9LvXY306FeIS_eAW5Mn-Bw1Vm9BIxKuztsTyTRGut4=m22")
+  }
+});
 
 client.on("message", (message) => {
     if( creepWords.some(word => message.content.includes(word)) ) {
