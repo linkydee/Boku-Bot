@@ -14,13 +14,14 @@ const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const marryWords = ["Boku marry me", "boku marry me", "boku Marry me", "BOKU MARRY ME"];
 
 //Replies
+/*
 client.on("message", (message) => {
     if( marryWords.some(word => message.content.startsWith(word)) ) {
       var person = ["<@${message.author.id}"]
     Message.channel.sendMessage(person);
     }
   });
-
+*/
 client.on("message", (message) => {
     if( rateWords.some(word => message.content.startsWith(word)) ) {
       var question = ["I rate that 1/10", "I rate that 2/10", "I rate that 3/10", "I rate that 4/10", "I rate that 5/10", "I rate that 6/10", "I rate that 7/10", "I rate that 8/10", "I rate that 9/10", "I rate that 10/10"];
