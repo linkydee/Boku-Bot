@@ -10,7 +10,11 @@ const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
 
-\n\nHeight:\n\nQuirk:\n\nOccupation:\n\nBio:")
+//Replies
+
+client.on("message", (message) => {
+  if( csheetWords.some(word => message.content.includes(word)) ) {
+    message.channel.sendMessage("Full Name:\n\nAge:\n\nGender:\n\nHeight:\n\nQuirk:\n\nOccupation:\n\nBio:")
   }
 });
 
