@@ -9,8 +9,8 @@ const rollWords = ["Roll me", "roll me", "Roll Me", "ROLL ME"];
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
-const lennyWords = ["lenny", "Lenny", "LENNY"];
-const creepWords = ["sniff @", "Sniff @", "SNIFF @"];
+const lennyWords = [".Blenny", ".BLenny", ".BLENNY"];
+const creepWords = [".Bsniff", ".BSniff", ".BSNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 
 //Replies
