@@ -132,16 +132,7 @@ client.on("message", (message) => {
         "'(Also, did he notice the girl touched him.)' - Yamaji Azumamaro",
         "'And did she p-poke me?' - Zetsubō Yami",
         "'What's the matter? **He said, commenting on the fact he was panting so much** I thought you said you didn't have a limit, has it gone down? Or...' - Yamaji and others",
-        "'I- I have no limit...' - Kamui Tenshin",
-        "'LEMME TELL YOU SOMETHIN BOTH STRANGERS THAT ARE TRYING TO LIT ME ON FIRE, YOU START A WAR WITH THE BIG BAD WOLF AND I'LL RIP YOUR INTESTINES AND TURN IT INTO A SWEATER!' - Kossha Saito",
-        "'Can I make people soft..? **Keppi thought**' - Keppi Docko",
-        "'**He smirked, cockily** I've gotten a whole lot better!' - Yamaji",
-        "'***I LOVE DICKS***' - Kiyoshi Shichiro/DickLover69",
-        "'Mah cock... **Sad face**' - Drex",
-        "'Someone hurt Sake's cock.' - Yamaji Azumamaro (Maybe you did last night)",
-        "'My cock need to be stronk' - Drex",
-        "'Rip Nori's cock.' - Drex",
-        "'I WILL ACTUALLY SUCK OFF ALL THE ADMINS' - Yoroi Endo (Im waiting...)"];
+        "'I- I have no limit...' - Kamui Tenshin"];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
     }
