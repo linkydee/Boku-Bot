@@ -56,7 +56,7 @@ client.on("message", (message) => {
         "'Except make him a bit wet.' - Yamaji/Hirokazu",
         "'She'd run inbetween Naya's legs, She trying to look up her skirt.' - Kemo-Kemo/Minaski",
         "'(Nice another teen dad.)' - Kamui Tenshin",
-        "'Ah! I dont care who wins! I JUST WANNA SEE TWO STUDENTS GO AT IT!' - ⓇⒾⓍ (Rip she's gone)",
+        "'Ah! I dont care who wins! I JUST WANNA SEE TWO STUDENTS GO AT IT!' - Rix (Rip she's gone)",
         "'He'd pin her to the ground, smiling. He gripped her tiddies.' - Renai The Perv",
         "'(If I was just able to kiss him I might have won...)' - Eceer Notrod",
         "'Unkink Penis.' - Finnagan",
