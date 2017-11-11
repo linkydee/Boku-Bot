@@ -14,14 +14,13 @@ const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"]
 
 client.on("message", (message) => {
   if( qsheetWords.some(word => message.content.includes(word)) ) {
-    message.channel.sendMessage("fdfs")
+    message.channel.sendMessage("Full Name:\n Age:\n Gender:\n Height:\n Quirk:\n Occupation:\n Bio:")
   }
 });
 
 client.on("message", (message) => {
   if( csheetWords.some(word => message.content.includes(word)) ) {
-    message.channel.sendMessage("Full Name: "
-                               "Hdaa")
+    message.channel.sendMessage("")
   }
 });
 
