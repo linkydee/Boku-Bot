@@ -17,8 +17,10 @@ const marryWords = ["Boku marry me", "boku marry me", "boku Marry me", "BOKU MAR
 //Replies
 
 client.on("message", (message) => {
-    if( creepWords.some(word => message.content.includes(word)) ) {
-    Message.channel.sendMessage("It smells bad...");
+    if( creepWords.some(word => message.content.startsWith(word)) ) {
+      var question = ["It smells bad", "It smells good"];
+      var answer = question[Math.floor(question.length * Math.random())];
+      message.channel.sendMessage(answer)
     }
   });
 
