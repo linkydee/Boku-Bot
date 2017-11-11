@@ -9,8 +9,15 @@ const rollWords = ["Roll me", "roll me", "Roll Me", "ROLL ME"];
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
+const lennyWords = ["lenny", "Lenny", "LENNY"];
 
 //Replies
+
+client.on("message", (message) => {
+  if( lennyWords.some(word => message.content.includes(word)) ) {
+    message.channel.sendMessage("https://tenor.com/view/lenny-face-gif-7486239")
+  }
+});
 
 client.on("message", (message) => {
   if( csheetWords.some(word => message.content.includes(word)) ) {
