@@ -19,23 +19,7 @@ const eps1Words = ["Boku Eps 1 s 1"]
 
 //Replies
 
-client.on("message", (message) => {
-    if( rollWords.some(word => message.content.startsWith(word)) ) {
-      var question = ["1", "2", "3"];
 
-      var answer = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer);
-
-      if( roll2Words.some(word => message.content.startsWith(word)) || ( roll3Words.some(word => message.content.startsWith(word)) ))
-      var answer1 = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer1)
-      
-      if( roll3Words.some(word => message.content.startsWith(word)) ) {
-      var answer2 = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer2);
-      }
-    }
-  });
 
 /*
 const marryWords = ["Boku marry me", "boku marry me", "Boku Marry Me", "BOKU MARRY ME"];
