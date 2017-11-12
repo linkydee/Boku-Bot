@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 const roll1Words = ["Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1"];
 const roll2Words = ["Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2"];
-const roll3Words = ["Roll me", "Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3"];
+const roll3Words = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3"];
 const rollWords = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3", "Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2", "Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1", "Roll me"];
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
@@ -168,13 +168,14 @@ client.on("message", (message) => {
   });
 
 
+
+
 client.on("message", (message) => {
     if( rollWords.some(word => message.content.startsWith(word)) ) {
-      
-      if(!message.member.roles.some(r=>["Owner", "Administrator", ""].includes(r.name)) )
-      return message.reply("FAIL!");
+            if(!message.member.roles.some(r=>["Owner", "Administrator", ""].includes(r.name)) )
+      return message.reply("HELL NO");
 
-      var question = [
+	      var question = [
         "Absorb and Release",
         "Acid", 
         "Age", 
@@ -354,21 +355,20 @@ client.on("message", (message) => {
         "Weather Creation",
         "Feather", 
         "Shattered Dreams"];
+	    
       var answer = question[Math.floor(question.length * Math.random())];
-	var answer2 = question[Math.floor(question.length * Math.random())];
-	var answer1= question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
 
-      if( roll2Words.some(word => message.content.startsWith(word)) || ( roll3Words.some(word => message.content.startsWith(word)) )) {
-
+      if( roll2Words.some(word => message.content.startsWith(word)) || ( roll3Words.some(word => message.content.startsWith(word)) ))
+      var answer1 = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer1)
-      }
-	      
-      if( roll3Words.some(word => message.content.startsWith(word)) ) {
       
+      if( roll3Words.some(word => message.content.startsWith(word)) ) {
+      var answer2 = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer2);
       }
     }
-  });
+});
+  
 
 client.login(process.env.BOT_TOKEN);
