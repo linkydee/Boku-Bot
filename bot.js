@@ -16,7 +16,7 @@ const eps1Words = ["Boku Eps 1 s 1"]
 
 //Replies
 
-//thing
+/*
 const marryWords = ["Boku marry me", "boku marry me", "Boku Marry Me", "BOKU MARRY ME"];
 client.on("message", (message) => {
   if( marryWords.some(word => message.content.includes(word)) ) {
@@ -24,7 +24,7 @@ client.on("message", (message) => {
     message.channel.sendMessage(">marry " + prs)
   }
 });
-//end of thing
+*/
 
 client.on("message", (message) => {
   if( eps1Words.some(word => message.content.startsWith(word)) ) {
