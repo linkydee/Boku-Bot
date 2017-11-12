@@ -16,6 +16,16 @@ const eps1Words = ["Boku Eps 1 s 1"]
 
 //Replies
 
+//thing
+const marryWords = ["Boku marry me", "boku marry me", "Boku Marry Me", "BOKU MARRY ME"];
+client.on("message", (message) => {
+  if( marryWords.some(word => message.content.includes(word)) ) {
+    var prs = `<@${message.author.id}>`
+    message.channel.sendMessage(">marry " + prs)
+  }
+});
+//end of thing
+
 client.on("message", (message) => {
   if( eps1Words.some(word => message.content.startsWith(word)) ) {
     message.channel.sendMessage("https://lh3.googleusercontent.com/6-JV_ZyNAsOO1te9KqD2aAdHwJ3piyejc9LvXY306FeIS_eAW5Mn-Bw1Vm9BIxKuztsTyTRGut4=m22")
