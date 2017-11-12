@@ -355,15 +355,17 @@ client.on("message", (message) => {
         "Feather", 
         "Shattered Dreams"];
       var answer = question[Math.floor(question.length * Math.random())];
+	var answer2 = question[Math.floor(question.length * Math.random())];
+	var answer1= question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(answer);
 
       if( roll2Words.some(word => message.content.startsWith(word)) || ( roll3Words.some(word => message.content.startsWith(word)) )) {
-      var answer1 = question[Math.floor(question.length * Math.random())];
+
       message.channel.sendMessage(answer1)
       }
 	      
       if( roll3Words.some(word => message.content.startsWith(word)) ) {
-      var answer2 = question[Math.floor(question.length * Math.random())];
+      
       message.channel.sendMessage(answer2);
       }
     }
