@@ -15,8 +15,8 @@ const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"]
 const lennyWords = ["B.lenny", "B.Lenny", "B.LENNY"];
 const creepWords = ["B.sniff", "B.Sniff", "B.SNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
-const eps1Words = ["Boku Eps 1 s 1"]
-const kmsWords = ["B.Kms", "B.kms", "B.KMS"]
+const eps1Words = ["Boku Eps 1 s 1"];
+const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 
 
 
@@ -25,11 +25,11 @@ client.on("message", (message) => {
 	
       var question = [
 	", You died from smelling stinky socks.", 
-	", You died from being alleric to people."
-        ", You punched Eceer a couple of times... Then he got Vengance ;)"
-      	", You died by pissing off the Owner"
-      	", You died by a pack of chihuahua's."
-      	", You died by giving Chuck Norris a high five."
+	", You died from being alleric to people.",
+        ", You punched Eceer a couple of times... Then he got Vengance ;)",
+      	", You died by pissing off the Owner",
+      	", You died by a pack of chihuahua's.",
+      	", You died by giving Chuck Norris a high five.",
       	", You died from the shock of ***THINKING*** you got hit by a truck."];
       var answer = question[Math.floor(question.length * Math.random())];
     	var prs = `<@${message.author.id}>`
