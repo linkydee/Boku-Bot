@@ -12,14 +12,23 @@ const rollWords = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3", "Roll me 
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
 const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
 const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
-const lennyWords = [".Blenny", ".BLenny", ".BLENNY"];
-const creepWords = [".Bsniff", ".BSniff", ".BSNIFF"];
+const lennyWords = ["B.lenny", "B.Lenny", "B.LENNY"];
+const creepWords = ["B.sniff", "B.Sniff", "B.SNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const eps1Words = ["Boku Eps 1 s 1"]
+const kmsWords = ["B.Kms", "B.kms", "B.KMS"]
 
 //Replies
+//var prs = `<@${message.author.id}>`
 
-
+client.on("message", (message) => {
+    if( kmsWords.some(word => message.content.includes(word)) ) {
+	var prs = `<@${message.author.id}>`
+      var question = [", You died from smelling stinky socks.", ", You died from being alleric to people."];
+      var answer = question[Math.floor(question.length * Math.random())];
+      message.channel.sendMessage(prs + answer)
+    }
+});
 
 /*
 const marryWords = ["Boku marry me", "boku marry me", "Boku Marry Me", "BOKU MARRY ME"];
