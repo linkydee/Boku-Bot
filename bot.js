@@ -18,8 +18,7 @@ const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const eps1Words = ["Boku Eps 1 s 1"]
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"]
 
-//Replies
-//var prs = `<@${message.author.id}>`
+
 
 client.on("message", (message) => {
     if( kmsWords.some(word => message.content.includes(word)) ) {
