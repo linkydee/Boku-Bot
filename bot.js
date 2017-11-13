@@ -24,7 +24,14 @@ const kmsWords = ["B.Kms", "B.kms", "B.KMS"]
 client.on("message", (message) => {
     if( kmsWords.some(word => message.content.includes(word)) ) {
 	var prs = `<@${message.author.id}>`
-      var question = [", You died from smelling stinky socks.", ", You died from being alleric to people."];
+      var question = [
+	", You died from smelling stinky socks.", 
+	", You died from being alleric to people."
+        ", You punched Eceer a couple of times... Then he got Vengance ;)"
+      	", You died by pissing off the Owner"
+      	", You died by a pack of chihuahua's."
+      	", You died by giving Chuck Norris a high five."
+      	", You died from the shock of __THINKING__ you got hit by a truck."];
       var answer = question[Math.floor(question.length * Math.random())];
       message.channel.sendMessage(prs + answer)
     }
