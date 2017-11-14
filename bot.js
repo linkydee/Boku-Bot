@@ -281,6 +281,7 @@ client.on("message", (message) => {
         "Plastic Wrap",
         "Pliabody",
         "Pop Off",
+	"PryoKenisis",
         "Possession",
         "Proliferation",
         "Pterodactyl",
