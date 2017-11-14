@@ -31,7 +31,12 @@ client.on("message", (message) => {
       	", You died by a pack of chihuahua's.",
       	", You died by giving Chuck Norris a high five.",
       	", You died from the shock of ***THINKING*** you got hit by a truck.",
-        ", You truly pissed Kamui off... Then he somehow beat you with his belly fat. ;)" ];
+        ", You truly pissed Kamui off... Then he somehow beat you with his belly fat. ;)",
+      	", Yuo gave you poison... you thought it was water.",
+      	", Oku caused an earthquake... You couldnt run"
+      	", ***A WILD CREEPY BUSH MAN APPEARED AND STABBED YOU***",
+	", You pissed of admin that is known for abusing there power.",
+      	", Memes. Just, Memes."];
       var answer = question[Math.floor(question.length * Math.random())];
     	var prs = `<@${message.author.id}>`
       message.channel.sendMessage(prs + answer)
