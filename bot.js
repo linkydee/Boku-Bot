@@ -30,7 +30,8 @@ client.on("message", (message) => {
       	", You died by pissing off the Owner",
       	", You died by a pack of chihuahua's.",
       	", You died by giving Chuck Norris a high five.",
-      	", You died from the shock of ***THINKING*** you got hit by a truck."];
+      	", You died from the shock of ***THINKING*** you got hit by a truck.",
+        ", You truly pissed Kamui off... Then he somehow beat you with his belly fat. ;)" ];
       var answer = question[Math.floor(question.length * Math.random())];
     	var prs = `<@${message.author.id}>`
       message.channel.sendMessage(prs + answer)
