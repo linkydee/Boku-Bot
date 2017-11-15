@@ -11,8 +11,9 @@ client.on("guildMemberAdd", (member) => {
   newUsers.set(member.id, member.user);
 
   if (newUsers.size > 0) {
+	const gen = 370203513977962499
     const userlist = newUsers.map(u => u.toString()).join(" ");
-    guild.defaultChannel.send("Welcome our new user!\n" + userlist);
+    guild.gen.send("Welcome our new user!\n" + userlist);
     newUsers.clear();
   }
 });
