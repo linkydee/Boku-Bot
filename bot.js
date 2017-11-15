@@ -14,6 +14,7 @@ client.on("guildMemberAdd", (member) => {
 
 client.on("ready", () => {
   console.log("I am ready!");
+  client.user.setGame("B.Help for help!");
 });
 
 const roll1Words = ["Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1"];
@@ -50,6 +51,18 @@ message.channel.send({embed: {
       {
         name: "Quote",
         value: "View a **__random__** quote. Use: **Q me**"
+      },
+      {
+        name: "Character/Quirk Sheet",
+        value: "View the Character/Quirk Sheet. Use: **Character/Quirk Sheet**"
+      },
+      {
+        name: "Rate",
+        value: "Let Boku rate somthing 1-10. Use: **Boku Rate**"
+      },
+      {
+        name: "Sniff",
+        value: "You creep. Use: **B.Sniff**"
       }
     ],
     timestamp: new Date(),
