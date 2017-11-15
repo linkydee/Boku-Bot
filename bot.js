@@ -30,6 +30,37 @@ const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
 
+client.on("message", (message) => {
+    if( helpWords.some(word => message.content.includes(word)) ) {
+	    
+message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Help",
+    description: "This is a test.",
+    fields: [{
+        name: "Kms",
+        value: "Tells you how to die. **B.kms**"
+      },
+      {
+        name: "Lenny",
+        value: "Lenny. **B.Lenny**"
+      },
+      {
+        name: "Quote",
+        value: "You can view a __random__ quote. **Q me**"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Test"
+    }
+  }
+}});
 
 client.on("message", (message) => {
     if( kmsWords.some(word => message.content.includes(word)) ) {
