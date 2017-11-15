@@ -60,7 +60,8 @@ message.channel.send({embed: {
       text: "© Test"
     }
   }
-}});
+}
+});
 
 client.on("message", (message) => {
     if( kmsWords.some(word => message.content.includes(word)) ) {
