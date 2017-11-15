@@ -33,8 +33,7 @@ const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku
 
 client.on("message", (message) => {
   if( helpWords.some(word => message.content.includes(word)) ) {
-    
-message.channel.send({embed: {
+message.author.sendMessage({embed: {
     color: 3447003,
     author: {
       name: client.user.username,
