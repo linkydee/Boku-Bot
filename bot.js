@@ -17,6 +17,17 @@ client.on("ready", () => {
   client.user.setGame("B.Help for help!");
 });
 
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  newUsers.set(member.id, member.user);
+
+  if (newUsers.size > 0) {
+    const userlist = newUsers.map(u => u.toString()).join(" ");
+    guild.defaultChannel.send("Welcome our new user!\n" + userlist);
+    newUsers.clear();
+  }
+});
+
 const roll1Words = ["Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1"];
 const roll2Words = ["Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2"];
 const roll3Words = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3"];
@@ -142,7 +153,7 @@ client.on("message", (message) => {
 });
 
 client.on("message", (message) => {
-  if( qsheetWords.some(word => message.content.includes(word)) ) {
+  if( qsheetWords.some(word => message.content.startsWith(word)) ) {
     message.channel.sendMessage("Quirk Name:\n\nQuirk Facts:\n\nQuirk Ability:\n\nQuirk Drawbacks:")
   }
 });
