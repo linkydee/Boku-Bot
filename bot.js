@@ -39,7 +39,6 @@ message.channel.send({embed: {
       name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: "Help",
     fields: [{
         name: "Kms",
         value: "Ways to die! Use: **B.Kms**"
