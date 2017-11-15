@@ -1,17 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on("guildMemberAdd", (member) => {
-  const guild = member.guild;
-  newUsers.set(member.id, member.user);
-
-  if (newUsers.size > 0) {
-    const userlist = newUsers.map(u => u.toString()).join(" ");
-    guild.defaultChannel.send("Welcome our new user!\n" + userlist);
-    newUsers.clear();
-  }
-});
-
 client.on("ready", () => {
   console.log("I am ready!");
   client.user.setGame("B.Help for help!");
