@@ -1,10 +1,15 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(`#general_and_ooc`);
-  if (!channel) return;
-  channel.send(`Welcome to the server! We are glad to have you!, ${member}`);
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  newUsers.set(member.id, member.user);
+
+  if (newUsers.size > 0) {
+    const userlist = newUsers.map(u => u.toString()).join(" ");
+    guild.defaultChannel.send("Welcome our new user!\n" + userlist);
+    newUsers.clear();
+  }
 });
 
 client.on("ready", () => {
