@@ -62,7 +62,7 @@ message.author.sendMessage({embed: {
       {
         name: "Sniff",
         value: "You creep. Use: **B.Sniff**"
-      }
+      },
     ],
     timestamp: new Date(),
     footer: {
