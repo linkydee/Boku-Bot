@@ -1,6 +1,12 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find('name', 'member-log');
+  if (!channel) return;
+  channel.send(`Welcome to the server! We are glad to have you!, ${member}`);
+});
+
 client.on("ready", () => {
   console.log("I am ready!");
 });
@@ -17,7 +23,7 @@ const creepWords = ["B.sniff", "B.Sniff", "B.SNIFF"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
-
+const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
 
 
 client.on("message", (message) => {
@@ -25,7 +31,7 @@ client.on("message", (message) => {
 	
       var question = [
 	", You died from smelling stinky socks.", 
-	", You died from being alleric to people.",
+	", You died from being allergic to people.",
         ", You punched Eceer a couple of times... Then he got Vengance ;)",
       	", You died by pissing off the Owner",
       	", You died by a pack of chihuahua's.",
