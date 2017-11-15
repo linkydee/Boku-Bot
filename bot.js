@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('general_and_ooc', 'member-log');
+  const channel = member.guild.channels.find('general_and_ooc');
   if (!channel) return;
   channel.send(`Welcome to the server! We are glad to have you!, ${member}`);
 });
