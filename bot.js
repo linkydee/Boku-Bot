@@ -34,7 +34,7 @@ const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
 
 bot.on("message", msg => {
-	let prefix = "=";
+	let prefix = "!";
 	
 	console.log(0)
 	if(!msg.content.startsWith(prefix)) return;
