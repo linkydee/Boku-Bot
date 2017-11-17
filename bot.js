@@ -33,15 +33,12 @@ const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
 const levelWords = ["B.LEVEL", "B.Level", "B.level"];
-
-bot.on("message", msg => {
 let prefix = "!";
+
+client.on("message", msg => {
 
 console.log(0)
 if(!msg.content.startsWith(prefix)) return;
-
-console.log(0.1)
-if(msg.author.id != "235144525763444736") return;
 
 let userData = XP[msg.author.id];
 if (!userData) userData = {XP: 0, level: 0};
