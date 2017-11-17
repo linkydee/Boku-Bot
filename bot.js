@@ -32,22 +32,12 @@ const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
+const levelWords = ["B.LEVEL", "B.Level", "B.level"];
 
-bot.on("message", msg => {
-	let prefix = "!";
-	
-	console.log(0)
-	if(!msg.content.startsWith(prefix)) return;
-	
+client.on("message", msg => {
 	//console.log(0.1)
 	//if(msg.author.id != "Your ID") return;
 	//Only use the above for testing as only the person with that ID can use the bot.
-	
-	console.log("help command")
-	if (msg.content.startsWith(prefix + "help")) {
-		msg.reply("Here are my commands: !help,")
-	}
-	
 	let userData = XP[msg.author.id];
 	if (!userData) userData = {XP: 0, level: 0};
 	
@@ -59,7 +49,7 @@ bot.on("message", msg => {
 	}
 	
 	console.log("level")
-	if (msg.content.startsWith(prefix + "level")) {
+	if (msg.content.startsWith(levelWords)) {
 		msg.reply(`You are lvl ${userData.level}, with ${userData.XP} XP Right Now.`);
 	}
 	
@@ -68,9 +58,9 @@ bot.on("message", msg => {
 	
 	
 	console.log("Example")
-	if (msg.content.startsWith(prefix + "killExample")) {
+	if (msg.content.startsWith(slimeWords)) {
 		userData.XP += 10
-		msg.channel.sendMessage(`${msg.author} has killed an Example!`)
+		msg.channel.sendMessage(`${msg.author} has killed an Slime!`)
 	}
 	
 	console.log(XP)
