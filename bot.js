@@ -3,8 +3,7 @@ const client = new Discord.Client();
 var fs = require("fs");
 
 var userData = JSON.parse(fs.readFileSync("Boku-Bot/storage/userData.json", 'utf8'));
-c
-lient.on("ready", () => {
+client.on("ready", () => {
   console.log("I am ready!");
   client.user.setGame("B.Help for help!");
 });
