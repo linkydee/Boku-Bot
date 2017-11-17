@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const fs = require('fs');
+let XP = JSON.parse(fs.readFileSync('./XP.json', 'utf8'));
 
 client.on("ready", () => {
   console.log("I am ready!");
@@ -36,9 +38,6 @@ const levelWords = ["B.LEVEL", "B.Level", "B.level"];
 let prefix = "!";
 
 client.on("message", msg => {
-
-console.log(0)
-if(!msg.content.startsWith(prefix)) return;
 
 let userData = XP[msg.author.id];
 if (!userData) userData = {XP: 0, level: 0};
