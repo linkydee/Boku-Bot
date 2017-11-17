@@ -9,7 +9,7 @@ lient.on("ready", () => {
   client.user.setGame("B.Help for help!");
 });
 
-bot.on("message", (message) => {
+client.on("message", (message) => {
 	if (!userData[sender.id]) userData[sender.id] = {
 		messageSent: 0
 	}
