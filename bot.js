@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var fs = require('fs');
+var fs = require("fs");
 
-var userData = JSON.parse(fs.readFileSync('storage/userData.json', 'utf8'));
+var userData = JSON.parse(fs.readFileSync("Boku-Bot/storage/userData.json", 'utf8'));
 c
 lient.on("ready", () => {
   console.log("I am ready!");
@@ -15,7 +15,7 @@ client.on("message", (message) => {
 	}
 	userData[sender.id].messageSent++;
 	
-	fs.writeFile('storage/userData.json', JSON.stringify(userData), (err) => {
+	fs.writeFile("Boku-Bot/storage/userData.json", JSON.stringify(userData), (err) => {
 		if (err) console.error(err)
 	});
 }
