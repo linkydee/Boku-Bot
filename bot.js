@@ -34,7 +34,7 @@ const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
 const levelWords = ["B.LEVEL", "B.Level", "B.level"];
 
-client.on("message", msg => {
+bot.on("message", msg => {
 	//console.log(0.1)
 	//if(msg.author.id != "Your ID") return;
 	//Only use the above for testing as only the person with that ID can use the bot.
