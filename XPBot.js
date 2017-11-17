@@ -47,4 +47,4 @@ bot.on("message", msg => {
 	fs.writeFile('./XP.json', JSON.stringify(XP), console.error);
 	
 });
-bot.login("BOT_TOKEN")
+bot.login(process.env.BOT_TOKEN)
