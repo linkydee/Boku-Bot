@@ -11,14 +11,14 @@ lient.on("ready", () => {
 
 client.on("message", (message) => {
 	if (!userData[sender.id]) userData[sender.id] = {
-		messageSent: 0
+	messagesSent: 0
 	}
-	userData[sender.id].messageSent++;
-	
-	fs.writeFile("Boku-Bot/storage/userData.json", JSON.stringify(userData), (err) => {
-		if (err) console.error(err)
-	});
-}
+
+	userData[sender.id].messagesSent++;
+
+	fs.writeFile('Boku-Bot/storage/userData.json', JSON.stringify(userData), (err) => {
+	if (err) console.error(err);
+});
 
 const roll1Words = ["Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1"];
 const roll2Words = ["Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2"];
