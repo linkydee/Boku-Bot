@@ -31,11 +31,9 @@ const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
+const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
 
 let XP = JSON.parse(fs.readFileSync('./XP.json', 'utf8'));
-
-bot.on("message", msg => {
-let prefix = "B.";
 
 let userData = XP[msg.author.id];
 if (!userData) userData = {XP: 0, level: 0};
@@ -47,7 +45,7 @@ if (curLevel > userData.level) {
 }
 
 console.log("level")
-if (msg.content.startsWith(prefix + "level")) {
+if (msg.content.startsWith("level")) {
     msg.reply(`You are lvl ${userData.level}, with ${userData.XP} XP Right Now.`);
 }
 
@@ -56,7 +54,7 @@ if (!XP[msg.author.id]) XP[msg.author.id] = {XP: 0, level: 0}
 
 
 console.log("Slime")
-if (msg.content.startsWith(prefix + "killSlime")) {
+if (msg.content.startsWith(slimeWords)) {
     userData.XP += 10
     msg.channel.sendMessage(`${msg.author} has killed a Slime!`)
 }
