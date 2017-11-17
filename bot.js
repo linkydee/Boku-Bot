@@ -7,6 +7,21 @@ client.on("ready", () => {
   client.user.setGame("B.Help for help!");
 });
 
+var userData = JSON.parse(fs.readFileSync('storage/userData.json', 'utf8'));
+
+client.on("message", (message) => {
+  var sender = message.author
+if (!userData[sender.id]) userData[sender.id] = {
+  messagesSent: 0
+  }
+  
+  userData[sender.id].messagesSent++;
+  
+  fs.writeFile('storage/userData.json', JSON.stringify(userData), (err) => {
+  if (err) console.error(err);
+  });
+});
+
 const roll1Words = ["Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1"];
 const roll2Words = ["Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2"];
 const roll3Words = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3"];
@@ -21,7 +36,16 @@ const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
 const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku help", "BOKU HELP"]
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
-const levelWords = ["B.LEVEL", "B.Level", "B.level"];
+const mesWords = ["B.Myw", "B.myw", "B.MYW"];
+
+
+client.on("message", (message) => {
+  if( mesWords.some(word => message.content.includes(word)) ) {
+    var sender1 = message.author
+    var prs = `<@${message.author.id}>, `
+    message.channel.send(prs + userData[sender1.id].messagesSent)
+  }
+}); 
 
 client.on("message", (message) => {
   if( helpWords.some(word => message.content.includes(word)) ) {
