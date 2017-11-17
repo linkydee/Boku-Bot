@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var fs = require("fs");
+const fs = require('fs');
 
-var userData = JSON.parse(fs.readFileSync("Boku-Bot/storage/userData.json", 'utf8'));
+var userData = JSON.parse(fs.readFileSync("storage/userData.json", 'utf8'));
 client.on("ready", () => {
   console.log("I am ready!");
   client.user.setGame("B.Help for help!");
