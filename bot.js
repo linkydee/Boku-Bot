@@ -49,10 +49,9 @@ client.on("message", (message) => {
 
 
 client.on("message", (message) => {
-    var sender = message.author
-    var prs = `<@${message.author.id}>, `
     If (message.author.id = 296757919792365570) {
-	   message.delete()}		
+	   message.delete()
+    }		
 });
 
 client.on("message", (message) => {
