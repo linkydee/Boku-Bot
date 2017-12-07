@@ -38,7 +38,9 @@ const helpWords = ["B.help", "B.help", "B.HELP", "Boku Help", "Boku help", "boku
 const slimeWords = ["B.KILLSLIME", "B.Killslime", "B.killslime"];
 const mesWords = ["B.Myw", "B.myw", "B.MYW"];
 
-
+client.on("message", (message) => {
+var server = "Junkyard"
+if (server = message.channel.guild.name) {
 client.on("message", (message) => {
   if( mesWords.some(word => message.content.includes(word)) ) {
     var sender1 = message.author
@@ -468,6 +470,7 @@ client.on("message", (message) => {
       }
     }
 });
-  
-
+	
+  }
+}
 client.login(process.env.BOT_TOKEN);
