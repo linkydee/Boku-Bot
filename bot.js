@@ -48,11 +48,7 @@ client.on("message", (message) => {
 }); 
 
 
-client.on("message", (message) => {
-    If (message.author.id = 296757919792365570) {
-	   message.delete()
-    }		
-});
+
 
 client.on("message", (message) => {
   if( helpWords.some(word => message.content.includes(word)) ) {
