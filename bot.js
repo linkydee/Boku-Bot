@@ -47,6 +47,13 @@ client.on("message", (message) => {
   }
 }); 
 
+
+client.on("message", (message) => {
+    var sender1 = message.author
+    var prs = `<@${message.author.id}>, `
+    If (sender.id = 296757919792365570) {message.delete()}		
+});
+
 client.on("message", (message) => {
   if( helpWords.some(word => message.content.includes(word)) ) {
 message.author.sendMessage({embed: {
