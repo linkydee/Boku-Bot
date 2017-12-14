@@ -46,11 +46,7 @@ client.on("message", (message) => {
   }
 }); 
 
-client.on("message", (message) => {
-  if(message.author.id == 208325184556498944) ) {
-    message.channel.send("Person above me is gay!")
-  }
-}); 
+
 
 
 client.on("message", (message) => {
