@@ -137,24 +137,6 @@ client.on("message", (message) => {
   });
 
 client.on("message", (message) => {
-  if( lennyWords.some(word => message.content.startsWith(word)) ) {
-    message.channel.sendMessage("https://tenor.com/view/lenny-face-gif-7486239")
-  }
-});
-
-client.on("message", (message) => {
-  if( csheetWords.some(word => message.content.includes(word)) ) {
-    message.channel.sendMessage("Full Name:\n\nAge:\n\nGender:\n\nHeight:\n\nQuirk:\n\nOccupation:\n\nBio:")
-  }
-});
-
-client.on("message", (message) => {
-  if( qsheetWords.some(word => message.content.startsWith(word)) ) {
-    message.channel.sendMessage("Quirk Name:\n\nQuirk Facts:\n\nQuirk Ability:\n\nQuirk Drawbacks:")
-  }
-});
-
-client.on("message", (message) => {
     if( qoteWords.some(word => message.content.startsWith(word)) ) {
       var question = [
         "'Can someone lend me their sweaty armpits?' - Keppi Docko",
