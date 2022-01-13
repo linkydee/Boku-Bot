@@ -27,10 +27,10 @@ const roll2Words = ["Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2"];
 const roll3Words = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3"];
 const rollWords = ["Roll me 3", "roll me 3", "Roll Me 3", "ROLL ME 3", "Roll me 2", "roll me 2", "Roll Me 2", "ROLL ME 2", "Roll me 1", "roll me 1", "Roll Me 1", "ROLL ME 1", "Roll me"];
 const qoteWords = ["Q me", "q me", "Q Me", "Q ME"];
-const csheetWords = ["Character sheet", "character sheet", "Character Sheet", "CHARACTER SHEET"];
-const qsheetWords = ["Quirk sheet", "quirk sheet", "Quirk Sheet", "QUIRK SHEET"];
-const lennyWords = ["B.lenny", "B.Lenny", "B.LENNY"];
-const creepWords = ["B.sniff", "B.Sniff", "B.SNIFF"];
+const csheetWords = ["HGASJAKFA"];
+const qsheetWords = ["HGASJAKFA"];
+const lennyWords = ["HGASJAKFA"];
+const creepWords = ["HGASJAKFA"];
 const rateWords = ["Boku rate", "boku rate", "Boku Rate", "BOKU RATE"];
 const eps1Words = ["Boku Eps 1 s 1"];
 const kmsWords = ["B.Kms", "B.kms", "B.KMS"];
@@ -62,24 +62,24 @@ message.author.sendMessage({embed: {
         value: "Ways to die! Use: **B.Kms**"
       },
       {
-        name: "Lenny",
-        value: "Why not. Use: **B.Lenny**"
+        name: "Blank",
+        value: "Blank"
       },
       {
         name: "Quote",
         value: "View a **__random__** quote. Use: **Q me**"
       },
       {
-        name: "Character/Quirk Sheet",
-        value: "View the Character/Quirk Sheet. Use: **Character/Quirk Sheet**"
+        name: "Blank",
+        value: "Blank"
       },
       {
         name: "Rate",
         value: "Let Boku rate somthing 1-10. Use: **Boku Rate**"
       },
       {
-        name: "Sniff",
-        value: "You creep. Use: **B.Sniff**"
+        name: "Blank",
+        value: "Blank"
       }
     ],
     timestamp: new Date(),
@@ -96,19 +96,8 @@ client.on("message", (message) => {
     if( kmsWords.some(word => message.content.includes(word)) ) {
 	
       var question = [
-	", You died from smelling stinky socks.", 
-	", You died from being allergic to people.",
-        ", You punched Eceer a couple of times... Then he got Vengance ;)",
-      	", You died by pissing off the Owner",
-      	", You died by a pack of chihuahua's.",
-      	", You died by giving Chuck Norris a high five.",
-      	", You died from the shock of ***THINKING*** you got hit by a truck.",
-        ", You truly pissed Kamui off... Then he somehow beat you with his belly fat. ;)",
-      	", Yuo gave you poison... you thought it was water.",
-      	", Oku caused an earthquake... You couldnt run",
-      	", ***A WILD CREEPY BUSH MAN APPEARED AND STABBED YOU***",
-	", You pissed of admin that is known for abusing there power.",
-      	", Memes. Just, Memes."];
+	", You died",
+      	", You died. Congrats"];
       var answer = question[Math.floor(question.length * Math.random())];
     	var prs = `<@${message.author.id}>`
       message.channel.sendMessage(prs + answer)
@@ -262,210 +251,5 @@ client.on("message", (message) => {
       message.channel.sendMessage(answer);
     }
   });
-
-
-
-
-client.on("message", (message) => {
-    if( rollWords.some(word => message.content.startsWith(word)) ) {
-            if(!message.member.roles.some(r=>["Owner", "Administrator", ""].includes(r.name)) )
-      return message.reply("HELL NO");
-
-	      var question = [
-        "Absorb and Release",
-        "Acid", 
-        "Age", 
-        "Air Propulsion", 
-        "Animal Voice", 
-        "Artistic Creation", 
-        "Bear - Form", 
-        "Black Hole", 
-        "Blood Manipulation", 
-        "Bloodcurdle",  
-        "Brainwashing", 
-        "Bunny - Form", 
-        "Cat - Form", 
-        "Cemedine", 
-        "Cement", 
-        "Centipede", 
-        "Chronostasis", 
-        "Compression", 
-        "Confession", 
-        "Copy", 
-        "Creation", 
-        "Cremation", 
-        "Crystallization", 
-        "Dark Shadow", 
-        "Desutegoro's Quirk", 
-        "Disintegration", 
-        "Dog - Form", 
-        "Double", 
-        "Dragon Form", 
-        "Dream Creation", 
-        "Dust Manipulation", 
-        "Earphone Jack",
-        "Earth Flow", 
-        "Emotional Control", 
-        "Erasure", 
-        "Explosion", 
-        "Falcanary", 
-        "Fat Adsorption", 
-        "Fear", 
-        "Fire Breath", 
-        "Fish - Form", 
-        "Flame hair", 
-        "Fold", 
-        "Foldabody", 
-        "Forcible Quirk Activation", 
-        "Fortune Teller", 
-        "Four Arms", 
-        "Fox - Form", 
-        "Frog - Form", 
-        "Gatling", 
-        "Half Cold Half Hot", 
-        "Hallucination", 
-        "Halo Rings", 
-        "Hardening", 
-        "Hell Flame", 
-        "High Spec", 
-        "Homing", 
-        "Honey", 
-        "Horns", 
-        "Hydrokinesis", 
-        "Hypertrophy", 
-        "Impact Recoil", 
-        "Innsmouth's quirk", 
-        "Jet", 
-        "Large Fists", 
-        "Lion - Form", 
-        "Longevity", 
-        "Lost Sense", 
-        "Luck", 
-        "Lullaby", 
-        "Lumber", 
-        "Luminous", 
-        "Lust", 
-        "Magnetism", 
-        "Manuel's Quirk", 
-        "Monster",
-        "Mosquito - Form",
-        "Musculoskeletal Coiling", 
-        "Navel Laser",
-        "Orcinus",
-        "Outburst",
-        "Pain Management",
-        "Paralyzation",
-        "Personality Fog",
-        "Plastic Wrap",
-        "Pliabody",
-        "Pop Off",
-	"PryoKenisis",
-        "Possession",
-        "Proliferation",
-        "Pterodactyl",
-        "Rappa's Quirk",
-        "Reality Warp",
-        "Recovery",
-        "Rikiya Katsukame's Quirk",
-        "Rivet", 
-        "Scales",
-        "Search",
-        "Shock Absorption",
-        "Size",
-        "Sleep Gas",
-        "Sloshed",
-        "Sludge - Form", 
-        "Snake - Form",
-        "Snake Hair",
-        "Solid Air",
-        "Somnambulist",
-        "Spider - Form",
-        "Spikes",
-        "Spirit Talker",
-        "Sprout",
-        "Steel",
-        "Super Regeneration",
-        "Tape", 
-        "Telepath",
-        "Tengai's Quirk", 
-        "Tensei Iida's Quirk",
-        "Tongue Web",
-        "Tool Arms",
-        "Toxic Bubbles", 
-        "Transform",
-        "Transmission",
-        "Transparency",
-        "Twin impact",
-        "Universal Adapter",
-        "Vampirism", 
-        "Vines",
-        "Voice", 
-        "Warp Gate",
-        "Water Creation", 
-        "Weather Manipulation",
-        "Wifi",
-        "Wish",
-        "Zero Gravity", 
-        "Ink",
-        "Hair Blade", 
-        "Split Manipulation", 
-        "Tattoo Manipulation", 
-        "Retrogression", 
-        "Prism",
-        "Metal Touch",
-        "Spiritism",
-        "Collapse", 
-        "Flight",
-        "Thoughtopraphy", 
-        "Sickness",
-        "Discolouration",
-        "Reanimation",
-        "Sin",
-        "Opposite",
-        "Aura Manipulation",
-        "Calming Mind",
-        "Taste Control", 
-        "Layering Build",
-        "Angelic Mutation", 
-        "Expire",
-        "Glitched Travel", 
-        "Demon Mutation", 
-        "Writing Will",
-        "Vacuum",
-        "Persuasion", 
-        "Ashes",
-        "Attractivity Shift", 
-        "Centaur",
-        "Hesitation", 
-        "Retract",
-        "Poison Manipulation", 
-        "Iron deficiency",
-        "Quirk Improvement", 
-        "Robotic", 
-        "Crab - Form",
-        "Ventriloquism", 
-        "Health Bar",
-        "Doll", 
-        "Statue Animation", 
-        "Cactus Body", 
-        "Stone Glare",
-        "Weather Creation",
-        "Feather", 
-        "Shattered Dreams"];
-	    
-      var answer = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer);
-
-      if( roll2Words.some(word => message.content.startsWith(word)) || ( roll3Words.some(word => message.content.startsWith(word)) )) {
-      var answer1 = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer1)
-    }
-      
-      if( roll3Words.some(word => message.content.startsWith(word)) ) {
-      var answer2 = question[Math.floor(question.length * Math.random())];
-      message.channel.sendMessage(answer2);
-      }
-    }
-});
 	
 client.login(process.env.BOT_TOKEN);
